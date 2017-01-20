@@ -22,7 +22,3 @@ code yourself and place the JAR file into your server's plugins folder. Use one 
 
 ## Planned Features
 * Configuration file for adjusting individual mob behaviour
-
-## Known Issues
-* Pacified players can still deal damage using projectiles
-* Untested but god mode probably lets you fall out of the map forever
