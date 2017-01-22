@@ -5,6 +5,7 @@ import com.owenoclee.peacefulplayer.listeners.Pacified;
 import com.owenoclee.peacefulplayer.listeners.Pacifier;
 import org.bukkit.event.Listener;
 import org.bukkit.permissions.Permission;
+import org.bukkit.permissions.PermissionDefault;
 
 public enum Permissions {
 
@@ -20,8 +21,13 @@ public enum Permissions {
         this.listener = listener;
     }
 
-    public Permission getPermission() { return permission; }
+    public Permission getPermission() {
+        permission.setDefault(PermissionDefault.FALSE);
+        return permission;
+    }
 
-    public Listener getListener() { return listener; }
+    public Listener getListener() {
+        return listener;
+    }
 
 }
