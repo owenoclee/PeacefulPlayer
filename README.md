@@ -1,4 +1,5 @@
-# PeacefulPlayer
+![Peaceful Player banner image](https://i.imgur.com/VUWbwXm.png)
+
 Simple permission based plugin to provide peace to **specific** players that would rather play without monsters. With
 this plugin you can prevent monsters from attacking a certain player, prevent a player attacking monsters, or make a
 player immune from damage with three simple permissions. No commands or configuration needed.
