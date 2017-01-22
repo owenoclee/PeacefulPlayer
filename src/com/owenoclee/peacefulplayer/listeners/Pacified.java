@@ -25,7 +25,6 @@ public class Pacified implements Listener {
         }
         Entity victim = attackEvent.getEntity();
         if(attacker instanceof Player && attacker.hasPermission(Permissions.PACIFIED.getPermission()) && (Mobs.isHostile(victim) || Mobs.isNeutral(victim)) ) {
-            attackEvent.setDamage(0);
             attackEvent.setCancelled(true);
         }
     }

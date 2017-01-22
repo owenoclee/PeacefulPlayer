@@ -15,7 +15,6 @@ public class Pacifier implements Listener {
         Entity attacker = targetEvent.getEntity();
         Entity victim = targetEvent.getTarget();
         if(victim instanceof Player && victim.hasPermission(Permissions.PACIFIER.getPermission()) && Mobs.isHostile(attacker)) {
-            targetEvent.setTarget(null);
             targetEvent.setCancelled(true);
         }
     }

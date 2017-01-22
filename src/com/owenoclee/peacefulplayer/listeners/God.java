@@ -14,7 +14,6 @@ public class God implements Listener {
     public void onDamage(EntityDamageEvent damageEvent) {
         Entity victim = damageEvent.getEntity();
         if(victim instanceof Player && victim.hasPermission(Permissions.GOD.getPermission())) {
-            damageEvent.setDamage(0);
             damageEvent.setCancelled(true);
         }
     }
